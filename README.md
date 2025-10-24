@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Akatsuki Web
+
+A hyper-minimalistic landing page for the Akatsuki iOS app — a single, elegant screen built with Next.js and infused with "crimson dawn minimalism."
+
+## Features
+
+- **Crimson Dawn Aesthetic**: A restrained palette with bold crimson accents
+- **Instrument Serif Typography**: Custom typeface that mirrors the native app
+- **Smooth Micro-animations**: Framer Motion drives the hero reveal and CTA
+- **Dark Mode Friendly**: Respects the user’s system theme out of the box
+- **Responsive Layout**: Looks sharp across desktop, tablet, and mobile
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ (or Bun 1.1+)
+
+### Installation
+
+```bash
+git clone https://github.com/your-org/akatsuki-web.git
+cd akatsuki-web
+npm install
+# or
+bun install
+```
+
+### Development
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
-pnpm dev
-# or
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the landing page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: Next.js 16 (App Router)
+- **Styling**: Tailwind CSS 4
+- **Animations**: Framer Motion
+- **Typography**: Instrument Serif (local custom font)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+akatsuki-web/
+├── app/
+│   ├── fonts/          # Instrument Serif files
+│   ├── globals.css     # Global theme and animation styles
+│   ├── layout.tsx      # Root layout and font wiring
+│   └── page.tsx        # Landing page hero
+├── public/             # Static assets (if any)
+├── package.json
+└── README.md
+```
 
-## Deploy on Vercel
+## Deploying
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The app deploys cleanly to providers like Vercel or Netlify without extra configuration:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push the repository to your Git host
+2. Create a new project in your hosting provider
+3. Use the default build command (`next build`) and output directory (`.next`)
+
+No runtime environment variables are required.
+
+## License
+
+Private project for the Akatsuki todo app. Reach out to `sami@samihindi.com` for usage inquiries.
