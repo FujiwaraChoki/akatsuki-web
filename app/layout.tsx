@@ -21,6 +21,9 @@ const instrumentSerif = localFont({
 export const metadata: Metadata = {
   title: "Akatsuki - Begin beautifully",
   description: "A hyper-minimalistic todo app embodying crimson dawn minimalism",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
