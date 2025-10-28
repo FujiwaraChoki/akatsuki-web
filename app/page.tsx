@@ -65,7 +65,7 @@ export default function Home() {
       <div className="absolute top-8 right-8 z-10">
         <a
           className="rounded-full border border-foreground/20 px-5 py-2 text-sm text-foreground/80 transition-all hover:border-foreground/40 hover:text-foreground"
-          href="https://apps.apple.com/app"
+          href="https://apps.apple.com/us/app/akatsuki-elegant-todo-list/id6754445899"
         >
           Get for iPhone{" "}
         </a>
@@ -104,7 +104,7 @@ export default function Home() {
 
         {/* Animated Download Button */}
         <motion.a
-          href="https://apps.apple.com/app"
+          href="https://apps.apple.com/us/app/akatsuki-elegant-todo-list/id6754445899"
           className="gradient-button rounded-full bg-crimson px-16 py-5 text-xl text-white transition-all hover:opacity-90"
           variants={buttonVariants}
           initial="hidden"
